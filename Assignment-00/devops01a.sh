@@ -7,7 +7,8 @@ echo
 echo
 #echo "Computer cpus/core information"
 #echo "------------------------------"
-#wmic cpu get caption, deviceid, name, numberofcores, maxclockspeed, status
+echo -ne "Number of CPU: ";grep -c ^processor /proc/cpuinfo 
+inxi -C
 #echo
 #echo
 #echo "Computer RAM"
